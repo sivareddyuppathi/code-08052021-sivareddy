@@ -1,0 +1,5 @@
+package com.chalange.bmi.constants;
+
+public class AppConstants {
+
+}

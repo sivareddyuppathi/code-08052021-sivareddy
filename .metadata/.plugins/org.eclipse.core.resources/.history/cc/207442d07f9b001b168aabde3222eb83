@@ -1,0 +1,47 @@
+package com.coding.linkedlist;
+
+public class SinglyLinkedList implements SinglyLinkedListInterface {
+
+	private Node head;
+
+	private Node createNode(int data) {
+		return new Node(data);
+	}
+
+	@Override
+	public void insertFirst(int data) {
+		Node newNode = createNode(data);
+		newNode.next = head;
+		head = newNode;
+	}
+
+	@Override
+	public void insertAtEnd(int data) {
+		Node newNode = createNode(data);
+
+		if (head == null) {
+			head = newNode;
+		} else {
+			Node last = head;
+
+			while (last.next != null) {
+				last = last.next;
+			}
+
+			last.next = newNode;
+		}
+	}
+
+	@Override
+	public Node search(int data) {
+		Node temp = head;
+		while (temp != null) {
+			if (temp.data == data) {
+				return temp;
+			}
+			temp = temp.next;
+		}
+		return null;
+	}
+
+}

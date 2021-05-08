@@ -1,0 +1,13 @@
+package com.coding.linkedlist;
+
+public class SinglyLinkedList {
+	
+	private Node head;
+
+	// used to insert a node at the start of linked list
+	public void insertFirst(int data) {
+		Node newNode = new Node(data);
+		newNode.next = head;
+		head = newNode;
+	}
+}

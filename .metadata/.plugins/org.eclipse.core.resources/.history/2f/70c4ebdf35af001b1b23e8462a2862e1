@@ -1,0 +1,10 @@
+package com.chalange.bmi.helper;
+
+import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
+
+public class CheckBMI {
+	public static void main(String[] args) {
+		ObjectMapper m = new ObjectMapper();
+	}
+	
+}

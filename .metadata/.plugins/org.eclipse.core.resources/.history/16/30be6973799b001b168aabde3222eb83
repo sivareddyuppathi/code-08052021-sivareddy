@@ -1,0 +1,11 @@
+package com.coding.linkedlist;
+
+public class Node {
+	int key;
+	Node next;
+
+	public Node(int data) {
+		this.key = data;
+		this.next = null;
+	}
+}

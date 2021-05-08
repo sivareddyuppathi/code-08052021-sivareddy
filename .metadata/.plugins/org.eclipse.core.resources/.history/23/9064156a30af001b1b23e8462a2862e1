@@ -1,0 +1,11 @@
+package com.bmi.challenge;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class BMI {
+
+	public static void main(String[] args) {
+		ObjectMapper objectMapper = new JsonMapper();
+	}
+
+}

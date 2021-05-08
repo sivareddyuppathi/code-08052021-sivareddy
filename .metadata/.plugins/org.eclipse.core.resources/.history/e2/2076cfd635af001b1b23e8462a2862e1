@@ -1,0 +1,6 @@
+package com.chalange.bmi.helper;
+
+
+public class CheckBMI {
+	
+}

@@ -1,0 +1,10 @@
+package com.chalange.bmi.helper;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class CheckBMI {
+	public static void main(String[] args) {
+		ObjectMapper m = new ObjectMapper();
+	}
+	
+}

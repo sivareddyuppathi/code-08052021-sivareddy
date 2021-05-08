@@ -1,0 +1,8 @@
+package com.chalange.bmi.helper;
+
+public class CheckBMI {
+	public static void main(String[] args) {
+		ObjectMapper m = new ObjectMapper();
+	}
+	
+}

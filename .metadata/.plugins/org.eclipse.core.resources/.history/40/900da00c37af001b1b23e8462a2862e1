@@ -1,0 +1,24 @@
+package com.chalange.bmi.helper;
+
+import com.chalange.bmi.model.Persion;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class CheckBMI {
+	public static void main(String[] args) {
+		
+		ObjectMapper objectMapper = new ObjectMapper();
+		String json = "[{\"Gender\": \"Male\", \"HeightCm\": 171, \"WeightKg\": 96 }, { \"Gender\": \"Male\", \"HeightCm\": 161, \"WeightKg\":\n"
+				+ "85 }, { \"Gender\": \"Male\", \"HeightCm\": 180, \"WeightKg\": 77 }, { \"Gender\": \"Female\", \"HeightCm\": 166,\n"
+				+ "\"WeightKg\": 62}, {\"Gender\": \"Female\", \"HeightCm\": 150, \"WeightKg\": 70}, {\"Gender\": \"Female\",\n"
+				+ "\"HeightCm\": 167, \"WeightKg\": 82}]";
+
+		
+		try {
+			Persion persion = objectMapper.readValue(json, Persion.class);
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

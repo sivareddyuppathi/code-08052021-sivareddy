@@ -1,0 +1,4 @@
+module BMIChallenge {
+	requires com.fasterxml.jackson.databind;
+	requires jackson.mapper.asl;
+}

@@ -1,0 +1,24 @@
+package com.codechef.coding.mar2021.div3;
+
+import java.util.*;
+import java.util.stream.Stream;
+
+public class Outer {
+
+	public static void main(String[] args) {
+		System.out.println(simpleCipher("CDEF", 2));
+	}
+
+	public static String simpleCipher(String encrypted, int k) {
+
+		StringBuffer out = new StringBuffer();
+
+		for (int i = 0; i < encrypted.length(); i++) {
+
+			char ch = (char) (((int) encrypted.charAt(i) + k + 65) % 26 + 65);
+			out.append(ch);
+		}
+
+		return out.toString();
+	}
+}

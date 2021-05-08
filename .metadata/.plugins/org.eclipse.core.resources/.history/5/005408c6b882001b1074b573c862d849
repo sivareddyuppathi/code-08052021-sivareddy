@@ -1,0 +1,48 @@
+package com.coding.compitative;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.*;
+import java.util.Set;
+import java.util.TreeSet;
+
+
+
+
+public class Test {
+
+  public static void main(String[] args) {
+    try {
+      EFG efg = new EFG();
+      efg.printValue();
+    } catch (Exception pce) {
+      pce.printStackTrace();
+    }
+  }
+
+  public static class ABC {
+    protected static String value = "";
+
+    public ABC() {
+      value = "ABC";
+    }
+  }
+
+  public static class EFG extends ABC {
+    static {
+      value = "EFG";
+    }
+
+    public EFG() {
+    }
+
+    public void printValue() {
+      System.out.println(value);
+    }
+  }
+}

@@ -1,0 +1,5 @@
+package com.coding.linkedlist;
+
+public interface SinglyLinkedListInterface {
+
+}

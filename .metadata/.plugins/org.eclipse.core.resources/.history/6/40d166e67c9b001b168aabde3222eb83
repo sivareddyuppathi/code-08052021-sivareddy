@@ -1,0 +1,9 @@
+package com.coding.linkedlist;
+
+public class SinglyLinkedList implements SinglyLinkedListInterface {
+
+	private Node head;
+
+	// used to insert a node at the start of linked list
+	
+}

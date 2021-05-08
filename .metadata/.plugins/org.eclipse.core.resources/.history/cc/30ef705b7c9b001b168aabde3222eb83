@@ -1,0 +1,8 @@
+package com.coding.linkedlist;
+
+public class SinglyLinkedListMain {
+
+	public static void main(String[] args) {
+		SinglyLinkedListInterface slli = new SinglyLinkedList();
+	}
+}

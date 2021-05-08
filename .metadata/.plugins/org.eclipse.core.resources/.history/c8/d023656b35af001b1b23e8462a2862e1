@@ -1,0 +1,11 @@
+package com.bmi.challenge;
+
+import org.codehaus.jackson.map.ObjectMapper;
+
+public class BMI {
+
+	public static void main(String[] args) {
+		ObjectMapper objectMapper = new ObjectMapper();
+	}
+
+}

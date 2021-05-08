@@ -1,0 +1,29 @@
+package com.codechef.coding.mar2021.div3;
+
+import java.util.*;
+import java.util.stream.Stream;
+
+public class Outer {
+
+	public static void main(String[] args) {
+		System.out.println(simpleCipher("VTAOG", 2));
+	}
+
+	public static String simpleCipher(String msg, int shift) {
+
+		String s = "";
+	    int len = msg.length();
+	    for(int x = 0; x < len; x++){
+	        char c = msg.charAt(x);
+	        if (c < 65 || c > 97) {
+	        	int z =(65 - c);
+	            s += (char)(msg.charAt(97-z));
+	        }	
+	        else
+	            s += (char)(msg.charAt(x) - shift);
+	    }
+	    return s;
+
+	}
+
+}

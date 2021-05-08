@@ -1,0 +1,6 @@
+package com.coding.linkedlist;
+
+public interface SinglyLinkedListInterface {
+	void insertFirst(int data);
+	void insertAtEnd(int data);
+}

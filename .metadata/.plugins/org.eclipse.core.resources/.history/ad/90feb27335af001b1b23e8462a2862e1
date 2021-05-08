@@ -1,0 +1,3 @@
+module BMIChallenge {
+	requires com.fasterxml.jackson.databind;
+}

@@ -1,0 +1,17 @@
+package com.example.demo;
+
+import java.util.HashMap;
+
+import java.util.List;
+import java.util.Map;
+
+@RestController
+public class Test {
+	@Autowired
+	private EmployeeRepository employeeRepository;
+
+	@GetMapping("/employees")
+	public List<Employee> getAllEmployees() {
+		return employeeRepository.findAll();
+	}
+}

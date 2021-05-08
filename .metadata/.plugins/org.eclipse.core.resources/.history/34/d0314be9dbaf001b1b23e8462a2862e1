@@ -1,0 +1,13 @@
+package com.chalange.bmi.constants;
+
+public class AppConstants {
+
+	public static final String underWeight = "Under weight";
+	public static final String underWeight = "Under weight";
+	public static final String underWeight = "Under weight";
+	public static final String underWeight = "Under weight";
+	public static final String underWeight = "Under weight";
+	public static final String underWeight = "Under weight";
+	public static final String underWeight = "Under weight";
+
+}

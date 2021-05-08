@@ -1,0 +1,44 @@
+package com.chalange.bmi.helper;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import com.chalange.bmi.model.Persion;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class CheckBMI {
+	public static void main(String[] args) {
+
+		final ObjectMapper objectMapper = new ObjectMapper();
+
+		String json = "[\n" + "  {\n" + "    \"gender\": \"Male\",\n" + "    \"heightCm\": 171,\n"
+				+ "    \"weightKg\": 96\n" + "  },\n" + "  {\n" + "    \"gender\": \"Male\",\n"
+				+ "    \"heightCm\": 161,\n" + "    \"weightKg\": 85\n" + "  },\n" + "  {\n"
+				+ "    \"gender\": \"Male\",\n" + "    \"heightCm\": 180,\n" + "    \"weightKg\": 77\n" + "  },\n"
+				+ "  {\n" + "    \"gender\": \"Female\",\n" + "    \"heightCm\": 166,\n" + "    \"weightKg\": 62\n"
+				+ "  },\n" + "  {\n" + "    \"gender\": \"Female\",\n" + "    \"heightCm\": 150,\n"
+				+ "    \"weightKg\": 70\n" + "  },\n" + "  {\n" + "    \"gender\": \"Female\",\n"
+				+ "    \"heightCm\": 167,\n" + "    \"weightKg\": 82\n" + "  }\n" + "]";
+
+//		JSONArray jsonArray = new JSONArray(json);
+
+//		objectMapper.configure(DeserializationFeature.USE_JAVA_ARRAY_FOR_JSON_ARRAY, true);
+		try {
+			Persion[] persion = objectMapper.readValue(json, Persion[].class);
+			for (Persion p : persion) {
+				double bmi = calculateBMI(p);
+			}
+
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static double calculateBMI(Persion p) {
+
+		return 0;
+	}
+
+}

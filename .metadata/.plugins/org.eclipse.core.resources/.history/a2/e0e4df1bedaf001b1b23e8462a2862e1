@@ -1,0 +1,12 @@
+package com.chalange.bmi.constants;
+
+public class AppConstants {
+
+	public static final String underWeight = "Under weight";
+	public static final String normalWeight = "Normal weight";
+	public static final String overWeight = "Over weight";
+	public static final String moderatelyObese = "Moderately obese";
+	public static final String severelyObese = "Severely obese";
+	public static final String vSeverelyObese = "Very severely obese";
+
+}

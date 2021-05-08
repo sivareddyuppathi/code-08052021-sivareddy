@@ -1,0 +1,44 @@
+package com.chalange.bmi.model;
+
+public class Persion {
+
+	private String Gender;
+	private double heightCm;
+	private double weightKg;
+
+	public Persion() {
+
+	}
+
+	public String getGender() {
+		return Gender;
+	}
+
+	public void setGender(String gender) {
+		this.Gender = gender;
+	}
+
+	public double getHeightCm() {
+		return heightCm;
+	}
+
+	public void setHeightCm(double heightCm) {
+		this.heightCm = heightCm;
+	}
+
+	public double getWeightKg() {
+		return weightKg;
+	}
+
+	public void setWeightKg(double weightKg) {
+		this.weightKg = weightKg;
+	}
+
+	@Override
+	public String toString() {
+		return "Persion [gender=" + gender + ", heightCm=" + heightCm + ", weightKg=" + weightKg + "]";
+	}
+	
+	
+
+}
